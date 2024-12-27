@@ -41,7 +41,6 @@ public class Int_01 {
          2. 각각 5와 3을 넣기
          3. 저장공간의 각 값들을 4칙연산하여 출력하기
 		 * 
-<<<<<<< HEAD
 		 * */
 			int num11;
 			int num22;
@@ -54,20 +53,7 @@ public class Int_01 {
 			System.out.println("곱셈: " + (num11*num22));
 			System.out.println("나누기: " + (num11/num22));
 		 
-=======
 
-1. num1 = 5
-   num2 = 3
-
-   2. num1 = 5
-      num2 = 3
-
-      3. print("덧셈: ", num1 + num2)
-         print("뺄셈: ", num1 + num2)
-	 print("곱셈: ", num1 + num2)
-         print("나누기: ", num1 + num2)
-		 */
->>>>>>> 7df1412563b1a107fb56a69b63fe34da528d06e3
 
 	}
 
