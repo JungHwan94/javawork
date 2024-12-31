@@ -18,9 +18,9 @@ public class T99_Hwan {
 	Scanner scan = new Scanner(System.in);
 	
 	System.out.println("이름: ");
-	String name = scan.nextLine();
+	String name = scan.next();
 	System.out.println("성별(남/여): ");
-	String gender = scan.nextLine();
+	String gender = scan.next();
 	System.out.println("나이: ");
 	double age = scan.nextDouble();
 	System.out.println("키: ");
@@ -84,7 +84,7 @@ public class T99_Hwan {
 	   세 번째 문자 : p*/
 	
 	System.out.println("문자열을 입력하세요: ");
-	String eng = scan.nextLine();
+	String eng = scan.next();
 	
 	System.out.println("첫 번째 문자: " + eng.charAt(0));
 	System.out.println("두 번째 문자: " + eng.charAt(1));

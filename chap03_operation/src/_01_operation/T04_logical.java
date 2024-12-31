@@ -16,6 +16,7 @@ public class T04_logical {
 		int num1 = 10;
 		int num2 = 20;
 		boolean result = num1==num2 && num2>1;
+		// f(0)  &&  t(1)
 		
 		System.out.println(result);
 		
@@ -23,6 +24,7 @@ public class T04_logical {
 		System.out.println(result);
 		System.out.println("-----------------");
 		
+		// ! : not
 		boolean b1 = num1 >= num2;
 		System.out.println(b1);
 		System.out.println(!b1);
