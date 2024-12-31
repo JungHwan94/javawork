@@ -17,7 +17,7 @@ public class T99_Hwan {
 	
 	Scanner scan = new Scanner(System.in);
 	
-	/*System.out.println("이름: ");
+	System.out.println("이름: ");
 	String name = scan.nextLine();
 	System.out.println("성별(남/여): ");
 	String gender = scan.nextLine();
@@ -26,7 +26,7 @@ public class T99_Hwan {
 	System.out.println("키: ");
 	int height = scan.nextInt();
 	
-	System.out.println("키 " + height + "cm인 " + age + "살 " + gender + "자 " + name + "님 반가워요 :)");*/
+	System.out.println("키 " + height + "cm인 " + age + "살 " + gender + "자 " + name + "님 반가워요 :)");
 	
 
 	/*2. 키보드로 정수 두 개를 입력 받아 두 수의 합, 차, 곱, 나누기한 몫을 출력하세요.
@@ -40,12 +40,17 @@ public class T99_Hwan {
 	   곱하기 결과 : 161
 	   나누기 몫 결과 : 3*/
 	
+	
 	System.out.println("첫번째 정수 입력: ");
 	int num1 = scan.nextInt();
 	System.out.println("두번째 정수 입력: ");
 	int num2 = scan.nextInt();
 	
 	System.out.println("더하기 결과: " + (num1 + num2));
+	System.out.println("빼기 결과: " + (num1 - num2));
+	System.out.println("곱하기 결과: " + (num1 * num2));
+	System.out.println("나누기 몫 결과: " + (num1 / num2));
+	
 
 	/*3. 키보드로 가로, 세로 값을 값을 실수형으로 입력 받아 사각형의 면적과 둘레를 계산하여 출력하세요.
 	   계산 공식 ) 면적 : 가로 * 세로
@@ -57,6 +62,17 @@ public class T99_Hwan {
 
 	   면적 : 562.95
 	   둘레 : 110.4*/
+	
+	
+	System.out.println("가로 값 입력: ");
+	double qu1 = scan.nextDouble();
+	System.out.println("세로 값 입력: ");
+	double qu2 = scan.nextDouble();
+	
+	System.out.println("면적: " + (qu1 * qu2));
+	System.out.println("둘레: " + ((qu1 + qu2)*2));
+	
+	
 
 	/*4. 영어 문자열 값을 키보드로 입력 받아 문자에서 앞에서 세 개를 출력하세요.
 
@@ -66,5 +82,13 @@ public class T99_Hwan {
 	   첫 번째 문자 : a
 	   두 번째 문자 : p
 	   세 번째 문자 : p*/
+	
+	System.out.println("문자열을 입력하세요: ");
+	String eng = scan.nextLine();
+	
+	System.out.println("첫 번째 문자: " + eng.charAt(0));
+	System.out.println("두 번째 문자: " + eng.charAt(1));
+	System.out.println("세 번째 문자: " + eng.charAt(2));
+	
 }
 }

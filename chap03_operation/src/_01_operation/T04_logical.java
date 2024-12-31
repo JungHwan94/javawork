@@ -28,6 +28,18 @@ public class T04_logical {
 		System.out.println(!b1);
 		System.out.println(!!b1);
 		
+		// A : 65~90, a: 97
+		char ch1 = 'i';
+		System.out.println(ch1);
+		System.out.println("대문자인가? " + (ch1 >= 'A' && ch1 <= 'Z'));
+		System.out.println("소문자인가? " + (ch1 >= 'a' && ch1 <= 'z'));
+		/*
+		ch1 >= 65 && ch1 <= 90
+				
+		            65, 66, 67.... 90, 91,..
+		...,63, 64, 65,...    ,89 ,90  
+		*/
+		
 
 	}
 
