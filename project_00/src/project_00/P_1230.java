@@ -1,8 +1,8 @@
-package chap02_casting02;
+package project_00;
 
 import java.util.Scanner;
 
-public class T99_Hwan {
+public class P_1230 {
 	
 	public static void main(String[] args) {
 	/*1. 이름, 성별, 나이, 키를 사용자에게 입력 받아 각각의 값을 변수에 담고 출력하세요.

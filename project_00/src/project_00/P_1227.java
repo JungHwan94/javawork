@@ -1,8 +1,8 @@
-package chap02_casting02;
+package project_00;
 
 import java.util.Scanner;
 
-public class Hello_000 {
+public class P_1227 {
 
 	public static void main(String[] args) {
 		/*1. 문자하나를 입력받아 그 문자의 유니코드를 출력하기
