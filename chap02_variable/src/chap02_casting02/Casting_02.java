@@ -14,7 +14,7 @@ public class Casting_02 {
 		long long1 = 1113456711111111111L;
 		float flo2 = long1;
 		
-		// 65535
+		// 6553 5
 		int num2 = 50896;
 		char ch1 = (char)num2;
 		System.out.println(ch1);
