@@ -115,16 +115,40 @@ public class P_1231_2 {
 			과제 점수 : 40
 			출석 회수 : 10
 			============= 결과 ============
-			Fail [출석 횟수 부족(10/20)]*/
+			Fail [출석 횟수 부족(10/20)]
+			
+			*중간고사, 기말고사, 과제점수, 출석회수를 입력하고 Pass 또는 Fail을 출력
+		   평가 비율은 중간고사 20%, 
+		                  기말고사 30%, 
+		                  과제 30%, 
+		                  출석 20%로 이루어져 있고 
+		   이 때, 출석 비율은 출석 회수의 총 강의 회수 20회 중에서 출석한 날만 따진 값으로 계산.
+		   70점 이상일 경우 Pass, 
+		   70점 미만이거나 전체 강의에 30% 이상 결석 시 Fail을 출력
+			*/
 		
-		System.out.println("중간고사 점수 입력: ");
+		System.out.println("중간고사 점수 입력(20): ");
 		double jong = scan.nextDouble();
-		System.out.println("기말고사 점수 입력: ");
+		System.out.println("기말고사 점수 입력(30): ");
 		double gi = scan.nextDouble();
-		System.out.println("과제 점수 입력: ");
+		System.out.println("과제 점수 입력(30): ");
 		double gua = scan.nextDouble();
-		System.out.println("출석 횟수 입력: ");
+		System.out.println("출석 횟수 입력(20): ");
 		double chul = scan.nextDouble();
+		double sum = jong + gi + gua + chul;
+		System.out.println("중간고사 점수: " + jong);
+		System.out.println("기말고사 점수: " + gi);
+		System.out.println("과제 점수: " + gua);
+		System.out.println("출석 점수: " + chul);
+		System.out.println("총점: " + sum);
+		
+		if(chul < 14) {
+			System.out.println("Fail [출석 횟수 부족(" +chul +"/20]");
+		} else if(sum < 70) {
+			System.out.println("Fail [점수미달]");
+		} else if(sum >= 70) {
+			System.out.println("Pass");
+		}
 		
 	}
 
