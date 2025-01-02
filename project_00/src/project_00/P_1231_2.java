@@ -127,23 +127,32 @@ public class P_1231_2 {
 		   70점 미만이거나 전체 강의에 30% 이상 결석 시 Fail을 출력
 			*/
 		
-		System.out.println("중간고사 점수 입력(20): ");
+		System.out.println("중간고사 점수 입력: ");
 		double jong = scan.nextDouble();
-		System.out.println("기말고사 점수 입력(30): ");
+		System.out.println("기말고사 점수 입력: ");
 		double gi = scan.nextDouble();
-		System.out.println("과제 점수 입력(30): ");
+		System.out.println("과제 점수 입력: ");
 		double gua = scan.nextDouble();
-		System.out.println("출석 횟수 입력(20): ");
+		System.out.println("출석 횟수 입력: ");
 		double chul = scan.nextDouble();
-		double sum = jong + gi + gua + chul;
+		
+		double Sjong = jong * 0.2;
+		double Sgi = gi * 0.3;
+		double Sgua = gua * 0.3;
+		double sum = Sjong + Sgi + Sgua + chul;
 		System.out.println("중간고사 점수: " + jong);
 		System.out.println("기말고사 점수: " + gi);
 		System.out.println("과제 점수: " + gua);
 		System.out.println("출석 점수: " + chul);
-		System.out.println("총점: " + sum);
+		System.out.println("==========결과==========");
+		System.out.println("중간고사 점수(20): " + Sjong);
+		System.out.println("기말고사 점수(30): " + Sgi);
+		System.out.println("과제 점수(30): " + Sgua);
+		System.out.println("출석 점수(30): " + chul);
+		System.out.println("총점(30): " + sum);
 		
 		if(chul < 14) {
-			System.out.println("Fail [출석 횟수 부족(" +chul +"/20]");
+			System.out.println("Fail [출석 횟수 부족(" + chul +"/20]");
 		} else if(sum < 70) {
 			System.out.println("Fail [점수미달]");
 		} else if(sum >= 70) {
