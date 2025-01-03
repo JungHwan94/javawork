@@ -80,11 +80,31 @@ java책 p111 ~ 113까지 문제 풀기
 			System.out.println();
 		}
 		*/
+		/* 5-6
+		for (int i = 1; i <= 5; i++) {
+		    for (int j = 1; j <= i * 2 - 1; j++) {
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		*/
 		
+		int count = 0;
+		int ran;
 		
+		while(true) {
+		ran = (int)(Math.random() * 6)+1;
+		count++;
+		System.out.println("("+ ran + ")");
 		
+		if(ran == 6) {
+			
+			
+			break;
+		}
+		}
+		System.out.println("총 주사위 굴린 횟수는: "+ count + "회");
+		}
 		
-		
-	}
 
 }
