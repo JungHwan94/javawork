@@ -98,8 +98,6 @@ java책 p111 ~ 113까지 문제 풀기
 		System.out.println("("+ ran + ")");
 		
 		if(ran == 6) {
-			
-			
 			break;
 		}
 		}
