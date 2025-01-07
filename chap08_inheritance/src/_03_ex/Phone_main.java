@@ -9,16 +9,16 @@ public class Phone_main {
         System.out.println("아이폰:");
         phone.bell();
         phone.hangUp();
-        phone.sendVoice("안녕하세요!");
-        phone.receiveVoice("네, 안녕하세요!");
+        phone.sendVoice("어디임?");
+        phone.receiveVoice("다왔어");
         phone.hangOut();
         System.out.println("----------------------------");
         
         System.out.println("갤럭시:");
         smartPhone.bell();
         smartPhone.hangUp();
-        smartPhone.sendVoice("안녕하세요, 스마트폰!");
-        smartPhone.receiveVoice("스마트폰으로 전화 받았어요!");
+        smartPhone.sendVoice("뭐하냐");
+        smartPhone.receiveVoice("바빠 끊어");
         smartPhone.hangOut();
         System.out.println("----------------------------");
         String result = smartPhone.search("날씨");
