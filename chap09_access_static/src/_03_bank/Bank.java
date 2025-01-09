@@ -16,7 +16,7 @@ public class Bank {
 	
 	private int total;
 	
-	void deposit(int money) {
+	public void deposit(int money) {
 		if(money > 0) {
 			total += money;
 			System.out.println(money + "원 입금 확인되었습니다.");
@@ -24,7 +24,7 @@ public class Bank {
 			System.out.println("0원 이하는 입금 불가능입니다.");
 		}
 	}
-	void withdraw(int money) {
+	public void withdraw(int money) {
 		if(money > total) {
 			System.out.println("통장의 잔액이 부족합니다.");
 		} else if(money > 0) {
@@ -34,7 +34,7 @@ public class Bank {
 			System.out.println("0원 이하는 출금 불가능입니다.");
 		}
 	}
-	int getTotal() {
+	public int getTotal() {
 		return total;
     }
 //	void getTotal() {   //이걸로 써도 가능

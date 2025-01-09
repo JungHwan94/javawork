@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>chap09_access_static</name>
+	<name>chap10_polymorphism</name>
 	<comment></comment>
 	<projects>
-		<project>chap08_inheritance</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
