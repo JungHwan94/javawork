@@ -1,20 +1,26 @@
 package _07_ex;
-
+/*
+ * interface 다형성
+   - interface는 객체 생성 안됨
+   - interface를 상속받은 클래스를 객체생성하여 그 객체를 interface타입으로 형변환
+   
+ */
 public class Product_main {
 
-	public static void main(String[] args) {
-		Tv tv = new Tv();
-        tv.power(true);
-        tv.vol(5);
-        tv.cha(2);
-        tv.search("날씨");
-        tv.ai("오늘의 운세");
-
-        Game game = new Game();
-        game.game("카트라이더");
-        game.power(true);
-        game.vol(-3);
-        game.power(false);
+	public static void main(String[] args) {		
+		// Product product = new Product();  객체생성 안됨
+		
+		Product product = new Game();	// 형변환 가능
+		System.out.print(product + "의 ");
+		product.power();
+		System.out.println(product.volume(7));
+		
+		System.out.println("---------------------------");
+		
+		product = new Tv();
+		System.out.print(product + "의 ");
+		product.power();
+		System.out.println(product.volume(3));
         
 	}
 }
