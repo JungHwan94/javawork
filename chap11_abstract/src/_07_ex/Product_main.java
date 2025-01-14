@@ -12,15 +12,15 @@ public class Product_main {
 		
 		Product product = new Game();	// 형변환 가능
 		System.out.print(product + "의 ");
-		product.power();
-		System.out.println(product.volume(7));
+		product.power(false);
+		System.out.println();
 		
 		System.out.println("---------------------------");
 		
 		product = new Tv();
 		System.out.print(product + "의 ");
-		product.power();
-		System.out.println(product.volume(3));
+		product.power(false);
+		System.out.println();
         
 	}
 }
