@@ -11,6 +11,7 @@ public class T02_treeSet {
 		// 5천원 넣으면 5번 돌아감 / 만원 10번
 		System.out.println("복권 1000, 5000, 10000원권 중 하나 선택(숫자만 입력): ");
 		int money = scan.nextInt();
+		
 		if(money == 1000) {
 			while(set.size() < 6) {
 				set.add((int)(Math.random()*45)+1);
