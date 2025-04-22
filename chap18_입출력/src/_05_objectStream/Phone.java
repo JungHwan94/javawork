@@ -33,6 +33,6 @@ public class Phone implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Phone [name=" + name + ", price=" + price + "]";
+		return "Phone [name=" + name + ", price=`" + price + "]";
 	}
 }
